@@ -1,6 +1,6 @@
 {
   "name": "nx-esbuild-decorators",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "private": false,
   "description": "The Nx Plugin for esbuild contains executors and generators that support building applications using esbuild and also supports decorators",
   "keywords": [
@@ -20,9 +20,13 @@
     "requirements": {},
     "migrations": "./migrations.json"
   },
+  "overrides": {
+    "esbuild": "^0.19.5"
+  },
   "dependencies": {
-    "@nx/devkit": "file:../devkit",
-    "@nx/js": "file:../js",
+    "@anatine/esbuild-decorators": "^0.2.19",
+    "@nx/devkit": "^17.0.1",
+    "@nx/js": "^17.0.1",
     "chalk": "^4.1.0",
     "esbuild": "^0.19.5",
     "fast-glob": "3.2.7",

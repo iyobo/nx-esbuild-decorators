@@ -18,6 +18,7 @@ export interface EsBuildExecutorOptions {
   metafile?: boolean;
   minify?: boolean;
   outputFileName?: string;
+  plugins: any;
   outputHashing?: 'none' | 'all';
   outputPath: string;
   platform?: 'node' | 'browser' | 'neutral';
