@@ -1,0 +1,41 @@
+{
+  "name": "nx-esbuild-decorators",
+  "version": "0.0.1",
+  "private": false,
+  "description": "The Nx Plugin for esbuild contains executors and generators that support building applications using esbuild and also supports decorators",
+  "keywords": [
+    "Monorepo",
+    "EsBuild",
+    "Web",
+    "CLI"
+  ],
+  "main": "./index",
+  "typings": "./index.d.ts",
+  "author": "Victor Savkin",
+  "license": "MIT",
+  "homepage": "https://nx.dev",
+  "generators": "./generators.json",
+  "executors": "./executors.json",
+  "ng-update": {
+    "requirements": {},
+    "migrations": "./migrations.json"
+  },
+  "dependencies": {
+    "@nx/devkit": "file:../devkit",
+    "@nx/js": "file:../js",
+    "chalk": "^4.1.0",
+    "esbuild": "^0.19.5",
+    "fast-glob": "3.2.7",
+    "fs-extra": "^11.1.0",
+    "tsconfig-paths": "^4.1.2",
+    "tslib": "^2.3.0"
+  },
+  "peerDependenciesMeta": {
+    "esbuild": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
